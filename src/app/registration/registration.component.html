@@ -1,0 +1,57 @@
+<body>
+    <div id="main">
+        <h1>Новый участник</h1>
+        <span style="font-size: 10pt">
+            Страница для добавления нового участника с фото. На фото должно быть лицо.
+        </span>
+        <br><br>
+        <form id="new_user_form">
+            <table class="user_table" >
+            <tr>
+    
+                <td>
+                    <label for="login">
+                    Логин:
+                    </label>
+                </td>
+                <td>
+                    <div class="input_field">
+                        <input name="login" class="input_string" id="login" maxlength="25" size="10" placeholder="Логин">
+                    </div>
+                </td>
+    
+            </tr>
+            <tr>
+                <td>
+                    Фото:
+                </td>
+                <td>
+    
+                    <div class="input_field">
+                        <div id="filename_field"></div>
+                        <label for="upload">
+                        <span class="button">Обзор</span>
+                        </label>
+                        <input type="file" name="photo" class="photo" id="upload"
+                               placeholder="Фото" onchange="insertFileName(this.value);">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                    <label for="submit">
+                        <span class="button" id="button">Отправить</span>
+                    </label>
+                    <input type="submit" id="submit" style="visibility: hidden">
+                </td>
+            </tr>
+            </table>
+        </form>
+        <br>
+        <span class="MyriadProBold" style="color: crimson">Внимание! </span>
+        <br>Изображения сохраняются в открытом доступе!
+    </div>
+    </body>
+    

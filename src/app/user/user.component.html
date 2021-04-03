@@ -1,0 +1,44 @@
+<body>
+    <div id="main">
+        <h1>«Мероприятие»</h1>
+        <b id="conference_page_info">Введите логин участника, чтобы запустить<br>демонстрацию работы программы.<br></b>
+        <span style="font-size: 10pt">
+            Если необходимо добавить нового участника, т.е. загрузить<br>эталонное фото и привязать его к логину,
+            <a href="{% url 'new_user' %}">нажмите здесь</a>.
+            <br>Чтобы вернуться на главную страницу, <a href="{% url 'index' %}">нажмите здесь</a>.<br><br>
+        </span>
+        <form id="login_form">
+            <table class="user_table" >
+            <tr>
+    
+                <td>
+                    <label for="login">
+                    Логин:
+                    </label>
+                </td>
+                <td>
+                    <div class="input_field">
+                        <input name="login" class="input_string" id="login" maxlength="25" size="10" placeholder="Логин">
+                    </div>
+                </td>
+    
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                    <label for="submit">
+                        <span class="button" id="button">Отправить</span>
+                    </label>
+                    <input type="submit" id="submit" style="visibility: hidden">
+                </td>
+            </tr>
+            </table>
+        </form>
+        <div id="videoDiv"></div>
+        <br>
+        <span class="MyriadProBold" style="color: crimson">Внимание! </span>
+        <br>Изображения с веб-камеры сохраняются в открытом доступе.
+    </div>
+    </body>
+    

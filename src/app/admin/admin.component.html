@@ -1,0 +1,100 @@
+<body>
+    <div id="main">
+        <h1>«Панель администратора»</h1>
+        <span style="font-size: 10pt">
+            Чтобы зайти на «мероприятие» как участник, <a href="{% url 'conference' %}" target="_blank">нажмите здесь</a>.
+        </span>
+        <br>
+        <span style="font-size: 10pt">
+            Чтобы добавить нового участника, т.е. загрузить эталонное фото<br>и привязать его к логину,
+            <a href="{% url 'new_user' %}">нажмите здесь</a>.
+        </span>
+        <br><br>
+        <b>Информация о последней проверке</b>
+        <br><span style="font-size: 10pt">(обновляется каждую секунду)</span>
+        <br><br>
+        <table class="user_table">
+            <tr>
+                <td>
+                    user_id
+                </td>
+                <td>
+                    <span id="user_id">Загрузка...</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Дата и время<br><br>
+                </td>
+                <td>
+                    <span id="datetime"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Состояние подключения
+                </td>
+                <td>
+                    <span id="status"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Число лиц в кадре
+                </td>
+                <td>
+                    <span id="numberOfFacesInfoSpan"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Идентификация
+                </td>
+                <td>
+                    <span id="faceRecognitionInfoSpan"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Расстояние между дескрипторами
+                </td>
+                <td>
+                    <span id="descriptorsInfoSpan"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Изображение <br>с веб-камеры
+                </td>
+                <td>
+                    <span id="full_photo_span"><a id="full_photo_a" href="#" target="_blank"></a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Изображение лица
+                </td>
+                <td>
+                    <span id="face_photo_span"><a id="face_photo_a" href="#" target="_blank"></a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Эталонное <br>фото
+                </td>
+                <td>
+                    <span id="profile_photo_span"><a id="profile_photo_a" href="#" target="_blank"></a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Лицо на эталонном <br>фото
+                </td>
+                <td>
+                    <span id="profile_face_photo_span"><a id="profile_face_photo_a" href="#" target="_blank"></a></span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </body>
+    

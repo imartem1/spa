@@ -1,1 +1,190 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import 'variables';
+@import '../node_modules/font-awesome/css/font-awesome';
+
+$lt-gray: #ddd;
+$background-dark: #000000;
+$background-light: #000000;
+$background-pale: #D1C4E9;
+$primary-color-dark:   #000000;
+$primary-color:        #000000;
+$primary-color-light:  #D1C4E9;
+$primary-color-text:   #FFFFFF;
+$accent-color:         #FFC107;
+$primary-text-color:   #212121;
+$secondary-text-color: #757575;
+$divider-color:        #BDBDBD;
+
+@mixin zero-margin($pad-up-down, $pad-left-right) {
+    margin: 0px auto;
+    padding: $pad-up-down $pad-left-right;
+}
+// some basic resets 
+.background-primary {
+  background-color: $background-dark!important;
+}
+.background-accent {
+  background-color: $accent-color!important;
+}
+.text-floral-white {
+  color: floralwhite!important;
+}
+
+.flex-spacer {
+flex: 1 1 auto;
+}
+
+body { 
+  padding: 0; 
+  margin: 0; 
+  font-family: Roboto, sans-serif; 
+  
+}
+
+.container {
+    margin: 20px;
+    display:flex;
+}
+
+body {
+  font-family: 'MyriadProRegular', sans-serif;
+}
+
+#main {
+  text-align: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  color: firebrick;
+}
+
+a:hover {
+  color: red;
+}
+
+.user_table {
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 300px;
+  text-align: left;
+  border-radius: 15px;
+}
+.user_table th, td {
+  padding: 10px 15px;
+  vertical-align: top;
+}
+
+.user_table td:first-child {
+  font-weight: bold;
+  width: 50%;
+}
+
+.user_table a {
+  text-decoration: none;
+}
+
+.user_table a:link, .user_table a:visited {
+  color:#4AE83A;
+}
+
+.user_table a:hover {
+  color:#FD3F49;
+}
+
+.MyriadProBold {
+  font-family: 'MyriadProBold', sans-serif;
+  font-weight: bold;
+}
+
+.button, .activeButton{
+  background-color: #A2A3A3;
+  border: 1px solid #939494;
+  border-radius: 7px;
+  color: #FFFFFF;
+  float: left;
+  font-size: 16px;
+  height: 20px;
+  width: 80px;
+  line-height: 20px;
+  overflow: hidden;
+  padding: 2px 6px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #b22222;
+  border: 1px solid #ff0000;
+}
+
+.button:active, .activeButton {
+  background-color: #e72d2d;
+  border: 1px solid #e72d2d;
+}
+
+.input_field {
+  background-color: #FFFFFF;
+  color: black;
+  border: 1px solid #CCCCCC;
+  border-radius: 7px;
+  height: 20px;
+  overflow: hidden;
+  padding: 2px;
+  font-size: 16px;
+  position: relative;
+  text-align: left;
+  vertical-align: middle;
+  width: 180px;
+}
+
+.input_field .button{
+  float: right;
+  width: 50px;
+  font-size: 14px;
+  height: 18px;
+  line-height: 18px;
+  padding: 0 6px;
+}
+
+.input_field #upload{
+  visibility: hidden;
+}
+
+.input_field #filename_field {
+  background-color: #FFFFFF;
+  float: left;
+  height: 18px;
+  line-height: 18px;
+  overflow: hidden;
+  padding: 1px;
+  text-align: left;
+  vertical-align: middle;
+  width:60%;
+}
+
+.input_string {
+  background-color: #FFFFFF;
+  float: left;
+  height: 18px;
+  line-height: 18px;
+  font-size: 16px;
+  overflow: hidden;
+  padding: 1px;
+  text-align: left;
+  vertical-align: middle;
+  width:100%;
+  border: none;
+}
+
+.input_string:focus {
+  outline: none !important;
+}
